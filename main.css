@@ -244,88 +244,89 @@ body {
   display: grid;
   grid-template-columns: auto auto auto;
 }
-.stats{
+.stats {
   width: 100%;
   height: 723px;
   display: flex;
   justify-content: space-around;
 }
-.happy-clients{
+.happy-clients {
   width: 280px;
-height: 155px;
+  height: 155px;
   margin-top: 122px;
   margin-left: 512px;
 }
-.projects-completed{
+.projects-completed {
   width: 361px;
-height: 155px;
-margin-left: 212px;
-margin-top: -50px;
+  height: 155px;
+  margin-left: 212px;
+  margin-top: -50px;
 }
-.awards-win{
+.awards-win {
   width: 276px;
-height: 155px;
-margin-left: 458px;
+  height: 155px;
+  margin-left: 458px;
 }
-.last{
+.last {
   width: 333px;
-height: 155px;
-margin-left: 261px;
-margin-top: -40px;
+  height: 155px;
+  margin-left: 261px;
+  margin-top: -40px;
 }
-.stats-box{
-background: #FFFFFF;
-border: 1px solid #FFFFFF;
-box-shadow: 0px 12px 16px -4px rgba(17, 24, 39, 0.1), 0px 4px 6px -2px rgba(17, 24, 39, 0.05);
-border-radius: 4px;
+.stats-box {
+  background: #ffffff;
+  border: 1px solid #ffffff;
+  box-shadow: 0px 12px 16px -4px rgba(17, 24, 39, 0.1),
+    0px 4px 6px -2px rgba(17, 24, 39, 0.05);
+  border-radius: 4px;
 }
-.stats-box h1{
+.stats-box h1 {
   margin-top: 30px;
   margin-left: 30px;
   font-weight: 600;
-font-size: 72px;
-line-height: 84px;
-color: #292E3D;
+  font-size: 72px;
+  line-height: 84px;
+  color: #292e3d;
 }
-.stats-box p{
+.stats-box p {
   font-weight: 400;
-font-size: 24px;
-line-height: 28px;
-color: #667299;
+  font-size: 24px;
+  line-height: 28px;
+  color: #667299;
 }
-.stats-box div{
+.stats-box div {
   display: flex;
   gap: 12px;
   margin-left: 30px;
   margin-top: -75px;
 }
-.stats-right{
+.stats-right {
   margin-top: 170px;
 }
-.stats-right h2{
+.stats-right h2 {
   font-weight: 700;
-font-size: 60px;
-line-height: 70px;
-color: #2947A9;
+  font-size: 60px;
+  line-height: 70px;
+  color: #2947a9;
 }
-.stats-right p{
+.stats-right p {
   font-weight: 400;
-font-size: 20px;
-line-height: 23px;
-color: #525B7A;
+  font-size: 20px;
+  line-height: 23px;
+  color: #525b7a;
 }
-.stats-right button{
+.stats-right button {
   width: 176px;
-height: 53px;
-background: #2947A9;
-border-radius: 2px;
-border: 2px solid #2947A9;
-font-weight: 600;
-font-size: 18px;
-line-height: 21px;
-text-align: center;
-color: #FFFFFF;
-margin-top: 50px;
+  height: 53px;
+  background: #2947a9;
+  border-radius: 2px;
+  border: 2px solid #2947a9;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  color: #ffffff;
+  margin-top: 50px;
 }
 .ads {
   position: relative;
@@ -394,9 +395,12 @@ margin-top: 50px;
   color: #c2c7d6;
   padding-left: 20px;
 }
-.card1 div{
-  border:2px solid #2947A9;
-  background-color: #2947A9;
+.card1 {
+  transition: margin-left 0.6s ease-in-out;
+}
+.card1 div {
+  border: 2px solid #2947a9;
+  background-color: #2947a9;
   width: 384px;
   height: 100px;
   margin-top: -5px;
@@ -404,42 +408,58 @@ margin-top: 50px;
   padding-left: 12px;
   padding-top: -5px;
 }
-.card1 div .par1{
+.card1 div .par1 {
   font-weight: 700;
   font-size: 20px;
   line-height: 23px;
 }
-.card1 div .par2{
+.card1 div .par2 {
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
 }
-.project-cards{
-  display: grid;
-  grid-template-columns: 384px 384px;
+.project-cards {
+  display: flex;
+  margin-left: 369px;
   gap: 32px;
+  overflow: hidden;
 }
-.bar{
+.bar {
   width: 800px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-left: 642px;
+  margin-top: 20px;
 }
-.bar button div{
+.bar button div {
   display: flex;
   justify-content: center;
 }
-.bar button{
+.bar button {
   width: 295px;
   height: 64px;
-  background: #292E3D;
-  border: 2px solid #292E3D;
+  background: #292e3d;
+  border: 2px solid #292e3d;
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
   text-align: center;
-  color: #FFFFFF;
-
+  color: #ffffff;
+  cursor: pointer;
+}
+.dot {
+  cursor: pointer;
+  height: 16px;
+  width: 16px;
+  margin: 0 2px;
+  background-color: #f6f8f7;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.active, .dot:hover {
+  background-color: #2947a9;
 }
 .cta {
   background: #f6f8f7;
@@ -461,36 +481,36 @@ margin-top: 50px;
   text-align: center;
   color: #292e3d;
 }
-.name-mail{
+.name-mail {
   display: grid;
   grid-template-columns: 280px 280px;
   gap: 32px;
   margin-left: 424px;
   margin-bottom: 32px;
 }
-[placeholder]{
+[placeholder] {
   padding: 10px 8px;
   font-weight: 400;
-font-size: 18px;
-line-height: 21px;
-color: #A3AAC2;
+  font-size: 18px;
+  line-height: 21px;
+  color: #a3aac2;
 }
-form p{
+form p {
   margin-right: 300px;
 }
-.cta input{
+.cta input {
   height: 41px;
   width: 280px;
-  background: #FFFFFF;
-border: 1px solid #E0E3EB;
-border-radius: 4px;
+  background: #ffffff;
+  border: 1px solid #e0e3eb;
+  border-radius: 4px;
 }
-textarea{
+textarea {
   height: 135px;
   width: 592px;
-  background: #FFFFFF;
-border: 1px solid #E0E3EB;
-border-radius: 4px;
+  background: #ffffff;
+  border: 1px solid #e0e3eb;
+  border-radius: 4px;
 }
 .form button {
   height: 53px;
@@ -596,18 +616,22 @@ footer {
     padding: 0px 30px;
     width: 100%;
   }
+  .hero img{
+    width: 100%;
+    height: 300px;
+  }
   .hero h1 {
     font-weight: 600;
-    font-size: 25px;
+    font-size: 24px;
     position: absolute;
-    top: 27px;
-    left: 20px;
+    top: 60px;
+    left: 100px;
   }
   .feature-pj {
     position: absolute;
-    right: 0px;
+    right: 115px;
     width: 190px;
-    bottom: 0px;
+    bottom: 115px;
   }
   .blue{
     width: 190px;
@@ -641,8 +665,16 @@ footer {
     flex-direction: column;
     margin-left: -50px;
   }
+  .box {
+    margin-left: 76px;
+    margin-bottom: 26px;
+  }
   .box:first-child {
-    margin-left: 70px;
+    margin-left:72px
+  }
+;
+  .box:last-child{
+    margin-bottom: 40px;
   }
   .about-us img{
     display: none !important;
@@ -658,6 +690,7 @@ footer {
   width: 320px;
   height: 340px;
   padding-left: 30px;
+  margin-bottom: -100px;
   }
   .blue-box h2 {
     padding-top: 25px;
@@ -721,3 +754,4 @@ footer {
     font-size: 14px;
   }
 }
+
